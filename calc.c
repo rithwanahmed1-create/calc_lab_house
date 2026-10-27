@@ -329,6 +329,7 @@ static Value parse_primary(Parser *parser)
     return integer_value(0);
 }
 
+// AI (GitHub Copilot), prompt: "Implement the recursive-descent grammar, precedence, and exact error positions from the supplied lab." Conversation history URL: unavailable in this workspace.
 static Value parse_power(Parser *parser)
 {
     size_t count = 0;
@@ -482,6 +483,7 @@ static Value parse_expression(Parser *parser)
     return result;
 }
 
+// AI (GitHub Copilot), prompt: "Handle the lab's large files and required command-line modes in standard C." Conversation history URL: unavailable in this workspace.
 static int read_file(const char *path, char **contents, size_t *length)
 {
     FILE *file = fopen(path, "rb");
